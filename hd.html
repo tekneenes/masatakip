@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Interactive World Map</title>
+  <script src="https://cdn.jsdelivr.net/npm/jvectormap-next@3.0.0/dist/jquery-jvectormap.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jvectormap-next@3.0.0/dist/jquery-jvectormap.css">
+  <script src="https://cdn.jsdelivr.net/npm/jvectormap-content/world-mill.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  <div id="world-map" style="width: 800px; height: 500px;"></div>
+
+  <script>
+    $(function(){
+      $('#world-map').vectorMap({
+        map: 'world_mill',
+        backgroundColor: '#e0e0e0',
+        regionStyle: { initial: { fill: '#a0c4ff' } },
+        onRegionClick: function(event, code){
+          alert('You clicked: ' + code);
+        },
+      });
+    });
+  </script>
+</body>
+</html>
