@@ -1,6 +1,11 @@
 {
 	"folders": [
 		{
+			"name": "lib",
+			"path": "../../../masa_takip_new/lib"
+		},
+		{
+			"name": "masatakip-3.0.0",
 			"path": "../.."
 		}
 	],
